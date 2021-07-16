@@ -400,7 +400,7 @@ for (let index in arr) {
 - it's not lexical, it is determined by context, or how the function is executed
 - this — это не ссылка функции на саму себя и это не ссылка на область видимости функции.
 
-When the function is called, an activation record is created, also known as the calling context. This record contains information about where the function was called from (call stack), how the function was called, what parameters were passed to it, etc. One of the properties of this entry is a link thisthat will be used throughout this function.
+When the function is called, an activation record is created, also known as the calling context. This record contains information about where the function was called from (call stack), how the function was called, what parameters were passed to it, etc. One of the properties of this entry is a link to this that will be used throughout this function.
 
 - В действительности this — это привязка, которая создается во время вызова функции, и на что она ссылается определяется тем, где и при каких условиях функция была вызвана.
 
@@ -933,7 +933,7 @@ console.log(previewImg);
 
 ### alt attr
 
-- обязательный атрибут, название картинки, будет отображено, если каритинка не прогрузилась, или была ошибка в src, или пользователь использует screen reader
+- обязательный атрибут, название картинки, будет отображено, если картинка не прогрузилась, или была ошибка в src, или пользователь использует screen reader
 
 ### data attr
 
@@ -957,7 +957,7 @@ console.log(previewImg);
 
 - опасны, потому что не могут быть перезаписаны с помощью подключенного файла css
 
-### Node Children and Ancestors
+### Node Children and Descendants
 
 - Дочерними (по отношению к узлу) являются только те узлы, которые непосредственно в нём лежат (находятся на "первом уровне вложенности").
 - Потомками (по отношению к узлу) являются все вложенные в него узлы (находящиеся на "всех уровнях вложенности")
@@ -1011,7 +1011,7 @@ DOM events
 - beforeunload – уйти со страницы
   DOMContentLoaded возникает в тот момент, когда DOM дерево полностью построено и готово к работе, но при этом стили, скрипты и картинки могут находиться в процессе загрузки.
 
-- любой script встреченный в html будет выполняться до полного построения дерева очень
+- любой script встреченный в html будет выполняться до полного построения дерева
   Имелось ввиду, что будет выполнен весь код внутри тегов <script></script>. А если вы вставите там ссылку на скачивание js файла, он будет качаться параллельно.
 
 ### Query string parametes / Get parameters / POST parameters
