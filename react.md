@@ -136,3 +136,7 @@ function WelcomeDialog() {
 ### Uncontrolled component
 
 - is one that stores it's own state internally, and you query the DOM using a ref to find its current value when you need it, this is a bit more liek traditional html
+
+### UseRef()
+
+- фича: храните значение, изменение которого не должно ререндерить компонент

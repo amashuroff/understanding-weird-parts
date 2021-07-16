@@ -13,7 +13,11 @@
 - let / const: невозможно определить до инициализации
 
 - let: можно менять значение переменной
-- const: нельзя (но можно менять внутренности (наполнение) составного типа данных обьект (pointers))
+- const: нельзя (но можно менять внутренности (наполнение) составного типа данных обьект (pointers))ы
+
+### Module
+
+- Модуль — это файл, содержащий определения функций, классов и других сущностей (в зависимости от языка). В разных языках модули называют разными словами, но суть от этого не меняется
 
 ### Literal
 
@@ -952,6 +956,10 @@ console.log(previewImg);
 
 - async - скрипт выполнится как только загрузится
 - defer - срипт выполнится как только документ будет отпарсен
+
+### scrollWidth
+
+- value is equal to the minimum width the element would require in order to fit all the content in the viewport without using a horizontal scrollbar.
 
 ### inline styles
 
